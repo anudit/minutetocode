@@ -1,0 +1,22 @@
+.box {
+  /* Starting position */
+  opacity: 0;
+  -webkit-transform: translateX(100px) translateZ(0);
+          transform: translateX(100px) translateZ(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.seq-in .box {
+  /* In position */
+  opacity: 1;
+  -webkit-transform: translateX(0) translateZ(0);
+          transform: translateX(0) translateZ(0);
+}
+
+.seq-out .box {
+  /* Out position */
+  opacity: 0;
+  -webkit-transform: translateX(-100px) translateZ(0);
+          transform: translateX(-100px) translateZ(0);
+}

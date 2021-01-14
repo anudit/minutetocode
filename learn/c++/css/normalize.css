@@ -1,0 +1,153 @@
+@import "font-awesome.css";
+
+html {
+  overflow: hidden;
+}
+
+html,
+body,
+.seq {
+  height: 100%;
+}
+
+body.themelight {
+	filter: invert(100%);
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  background: rgb(13, 13, 13);
+}
+
+.seq,
+.seq-canvas,
+.seq-canvas > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.seq-canvas > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  position: absolute;
+  z-index: 100;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.navup {
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.seq-next,
+.seq-prev {
+  cursor: pointer;
+  padding:18px 21px;
+  background: none;
+  border: none;
+  font-size: larger;
+  color: #555;
+}
+
+.seq-next:hover,
+.seq-prev:hover {
+  background: #ddd;
+}
+
+p {
+  margin-bottom: 0em;
+}
+
+.small {
+  font-size: .75em;
+}
+
+.med {
+  font-size: 1em;
+}
+
+.large {
+  font-size: 1.25em;
+}
+
+code {
+    background: #0b0808;
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+p.code {
+    background: #0b0808;
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    padding: 10px;
+    border-radius: 3px;
+	  text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+.box {
+  position: relative;
+  margin: 0 auto;
+  padding: 4em;
+  max-width: 400px;
+  line-height: 1.4;
+  border-radius: 5px;
+  background: #161616;
+}
+
+.copy:before {
+  content: "\f0ea";
+  font-family: FontAwesome;
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  right: 0;
+  top: 0;
+  padding: 0.6em;
+  font-size: 1.2em;
+}
+
+.logo {
+  margin-bottom: 1em;
+}
+
+img.qr{
+	border-radius: 10px;
+    height: 200px;
+}
+
+img.qrlight{
+	border-radius: 10px;
+    height: 200px;
+	filter: invert(100%);
+}
+button.blight{
+	filter: invert(100%);
+}
+button[title]:hover:after {
+  content: attr(title);
+  font-family: 'Varela Round', sans-serif;
+  padding: 8px;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  bottom: 120%;
+  white-space: nowrap;
+  z-index: 20px;
+  background-color:#fff;
+}
